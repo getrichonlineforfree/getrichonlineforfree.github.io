@@ -52,15 +52,15 @@
 		background-image: url("https://web.archive.org/web/20090806030129im_/http://www.geocities.com/arielpurkey/starstwinkle.gif"");
 		background-repeat: repeat-y;
 	}
-
 	</style>
 	
 	<div class="sidenav">
-	  <button class="tablinks" onclick="openCity(event, 'link1')" id="defaultOpen"><u><b>Home</b></u></button>
-	  <button class="tablinks" onclick="openCity(event, 'link2')">Free Cash</button>
-	  <button class="tablinks" onclick="openCity(event, 'link3')">Pranks n Stuff</button>
-	  <button class="tablinks" onclick="openCity(event, 'link4')">News clippings</button>
-	  <button class="tablinks" onclick="openCity(event, 'link5')">Wall of Fame</button>
+	  <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen"><u><b>Home</b></u></button>
+	  <button class="tablinks" onclick="openCity(event, 'news')">News clippings</button>
+	  <button style="background:url(https://web.archive.org/web/20090831130739/http://geocities.com/titus_thai/free.gif);font-weight:bold;background-position:centred;" class="tablinks" onclick="openCity(event, 'cashfast')">Free Cash</button>
+	  <button class="tablinks" onclick="openCity(event, 'pranks')">Pranks n Stuff</button>
+	  <button class="tablinks" onclick="openCity(event, 'wall')">Wall of Fame</button>
+	  
 	</div>	
 	
 	<div class="main">
@@ -71,20 +71,22 @@
 	<br>
 	<img src="https://web.archive.org/web/20090829045745im_/http://www.geocities.com/prisonmurder/bloodbar.gif">
 	<h1>GETRICHONLINEFORFREE</h1>
-	<img src="https://web.archive.org/web/20090829143548/http://geocities.com/Area51/Vault/9112/INVASIONBAR.GIF">
+	<img src="https://web.archive.org/web/20090831051620/http://geocities.com/d_blakeley/Cash.gif" width="500">
 
 </head>
 
 <body style="background-color:black;background-image:url('https://web.archive.org/web/20090806030129im_/http://www.geocities.com/arielpurkey/starstwinkle.gif"');">
 	
-	<div id="link1" class="tabcontent">
+	<div id="home" class="tabcontent">
 	  <h1 style="color:black;background-color:red;" text-shadow="red">Home</h1>
 	  <t>Welcome! If you're here to read and learn than you are a smart person! Here we consider rules and norms with our own logic and life choises. After all, who else are they made for?</p>
-	  <p>And of course who doesn't want to get rich quick? Anyways, this site will update regularly, so keep up to date!</p>
-	  <img src="https://web.archive.org/web/20090831051620/http://geocities.com/d_blakeley/Cash.gif">
+	  <p>And of course who doesn't want to get rich quick? Anyways, this site will update regularly, so keep up to date, and good luck!</p>
+	  <img src="https://web.archive.org/web/20091027123741/http://geocities.com/~iep/c/money.gif" title="CASHCASHCASH" width="293" height="300">
+	  <br>
+	  <small>Keep the shiny side up!</small>
 	</div>
 
-	<div id="link2" class="tabcontent">
+	<div id="cashfast" class="tabcontent">
 	  <h1 style="color:black;background-color:red;" text-shadow="red">Make Cash FAST!!!!11!1!1</h1>
 	  <p>Ever short on cash? Me too buddy, but fear not! I have the solution</p>	
 	  <p> 1) Find a picture of a dollar bill on the internet
@@ -94,25 +96,30 @@
 	  <p>Of course some need cash faster than that. However you may just have to stay tuned for updates for more ideas...</p>
 	</div>
 
-	<div id="link3" class="tabcontent">
+	<div id="pranks" class="tabcontent">
 	  <h1 style="color:black;background-color:red;" text-shadow="red">Pranks n Stuff</h1>
 	  <p>Mischif that may or may not be harmless.</p>
 	  <h2>How to Stim Sleep Deprevation</h2>
 	  <p>Stimming sleep deprevation is possible! And it kinda works well! At least a little.</p>
 	  <P>Step 1) Wait until night<br>
-	  Step 2) DON'T FALL ASLEEP (should be easy if you have adhd or something)<br>
+	  Step 2) Don't fall asleep just yet!(should be easy if you have adhd)<br>
 	  Step 3) Set an alarm to sleep for 4-2 hrs max, sometime around 6-7am <br>
 	  Step 4) Fall asleep <i>after midnight</i>! IMPORTANT!<br>
 	  Step 5) Wake up and drink 2x as much coffee as you normally do. (If you don't drink coffee start now)</p>
-	  <p>Enjoy your extra <small> new</small> energy!</p>
+	  <p>Enjoy your extra energy!</p>
+	  <br>
+	  
+	  <h2>More to Come!</h2>
+	  <p>This site is still being made. Tune in regularly for changes!</p>
+	  <img src="https://web.archive.org/web/20090820093433/http://geocities.com/TelevisionCity/Studio/4711/Under_Construction.gif" width="1000">
 	</div>
 	
-	<div id="link4" class="tabcontent">
+	<div id="news" class="tabcontent">
 	  <h1 style="color:black;background-color:red;" text-shadow="red">News Clippings</h1>
 	  <p>Could be fake, or could be cherry picked from the media garden of eden. You decide.	</p>
 	</div>
 	
-	<div id="link5" class="tabcontent">
+	<div id="wall" class="tabcontent">
 	  <h1 style="color:black;background-color:red;" text-shadow="red">Wall of Fame</h1>
 	  <p>Mischif that may or may not be harmless.</p>
 	</div>
@@ -126,7 +133,7 @@
 	  }
 	  tablinks = document.getElementsByClassName("tablinks");
 	  for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
+		tablinks[i].classNaame = tablinks[i].className.replace(" active", "");
 	  }
 	  document.getElementById(cityName).style.display = "block";
 	  evt.currentTarget.className += " active";
