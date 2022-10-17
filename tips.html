@@ -70,11 +70,11 @@
 		</style>
 	</head>
 	<div class="sidenav">
-	  <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen"><u><b>Home</b></u></button>
-	  <button class="tablinks" onclick="openCity(event, 'news')">News clippings</button>
+	  <button class="tablinks" onclick="opentab(event, 'home')" id="defaultOpen"><u><b>Home</b></u></button>
+	  <button class="tablinks" onclick="opentab(event, 'news')">News clippings</button>
 	  <button style="background:url(https://web.archive.org/web/20090831130739/http://geocities.com/titus_thai/free.gif);font-weight:bold;background-position:centred;" class="tablinks" onclick="openCity(event, 'cashfast')">Free Cash</button>
-	  <button class="tablinks" onclick="openCity(event, 'tips')">Tips n Stuff</button>
-	  <button class="tablinks" onclick="openCity(event, 'wall')">Wall of Fame</button>
+	  <button class="tablinks" onclick="opentab(event, 'tips')">Tips n Stuff</button>
+	  <button class="tablinks" onclick="opentab(event, 'wall')">Wall of Fame</button>
 	</div>	
 
 	<div class="header">
@@ -149,7 +149,7 @@
 	</div>
 
 	<script>
-	function openCity(evt, cityName) {
+	function opentab(evt, tab) {
 	  var i, tabcontent, tablinks;
 	  tabcontent = document.getElementsByClassName("tabcontent");
 	  for (i = 0; i < tabcontent.length; i++) {
@@ -159,7 +159,7 @@
 	  for (i = 0; i < tablinks.length; i++) {
 		tablinks[i].classNaame = tablinks[i].className.replace(" active", "");
 	  }
-	  document.getElementById(cityName).style.display = "block";
+	  document.getElementById(tab).style.display = "block";
 	  evt.currentTarget.className += " active";
 	}
 
