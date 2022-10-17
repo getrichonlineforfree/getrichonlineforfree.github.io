@@ -6,7 +6,7 @@
 	
 	<style>
 	.sidenav {
-	  width: 100px;
+	  width: 120px;
 	  position: fixed;
 	  z-index: 1;
 	  top: 5px;
@@ -25,9 +25,15 @@
 	  transition: 0.3s;
 	  font-size: 15px;	
 	}
+	
+	/* When you mouse over the navigation links, change their color */
+	.sidenav button:hover {
+	  color: red;
+	}
+	
 		
 	.main {
-	  margin-left: 100px; /* Same as the width of the sidebar */
+	  margin-left: 120px; /* Same as the width of the sidebar */
 	  padding: 0px 25px;
 	}	
 	
@@ -43,6 +49,7 @@
 	
 	body {
 		color: white;
+		font-family: 'Georgia', serif;
 		background-image: url("https://web.archive.org/web/20090806030129im_/http://www.geocities.com/arielpurkey/starstwinkle.gif"");
 		background-repeat: repeat-y;
 	}
@@ -50,10 +57,10 @@
 	</style>
 	
 	<div class="sidenav">
-	  <button class="tablinks" onclick="openCity(event, 'link1')" id="defaultOpen">Home</button>
+	  <button class="tablinks" onclick="openCity(event, 'link1')" id="defaultOpen"><u><b>Home</b></u></button>
 	  <button class="tablinks" onclick="openCity(event, 'link2')">Free Cash</button>
-	  <button class="tablinks" onclick="openCity(event, 'link3')">Pranks'n'Stuff</button>
-	  <button class="tablinks" onclick="openCity(event, 'link4')">Tiptop News</button>
+	  <button class="tablinks" onclick="openCity(event, 'link3')">Pranks n Stuff</button>
+	  <button class="tablinks" onclick="openCity(event, 'link4')">News clippings</button>
 	  <button class="tablinks" onclick="openCity(event, 'link5')">Wall of Fame</button>
 	</div>	
 	
@@ -91,11 +98,16 @@
 	<div id="link3" class="tabcontent">
 	  <h1 style="color:black;background-color:red;" text-shadow="red">Pranks n Stuff</h1>
 	  <p>Mischif that may or may not be harmless.</p>
+	  <h2>How to Stim Sleep Deprevation</h2>
+	  <p>Stimming sleep deprevation is possible! And it kinda works well! At least a little.</p>
+	  <P>Step 1) Wait until night<br>
+	  Step 2) DON'T FALL ASLEEP (should be easy if you have adhd or something)<br>
+	  Step 3) Sleep maximum 4-2 hrs <i>after midnight</i>! IMPORTANT!</p>
 	</div>
 	
 	<div id="link4" class="tabcontent">
-	  <h1 style="color:black;background-color:red;" text-shadow="red">Tiptop News</h1>
-	  <p>UNDER CONSTRUCTION</p>
+	  <h1 style="color:black;background-color:red;" text-shadow="red">News Clippings</h1>
+	  <p>Could be fake, or could be cherry picked from the media garden of eden. You decide.	</p>
 	</div>
 	
 	<div id="link5" class="tabcontent">
