@@ -5,6 +5,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<style>
+	.sidenav {
+	  width: 100px;
+	  position: fixed;
+	  z-index: 1;
+	  top: 5px;
+	  left: 5px;
+	  background: red;
+	  overflow-x: hidden;
+	  padding: 8px 10px;
+	}
+	
+	.sidenav button {
+	  background-color: white;
+	  float: left;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 5px 5px;
+	  transition: 0.3s;
+	  font-size: 15px;	
+	}
+		
+	.main {
+	  margin-left: 100px; /* Same as the width of the sidebar */
+	  padding: 0px 25px;
+	}	
+	
 	.footer {
 	  position: fixed;
 	  left: 0;
@@ -23,11 +49,21 @@
 
 	</style>
 	
+	<div class="sidenav">
+	  <button class="tablinks" onclick="openCity(event, 'link1')" id="defaultOpen">Home</button>
+	  <button class="tablinks" onclick="openCity(event, 'link2')">Free Cash</button>
+	  <button class="tablinks" onclick="openCity(event, 'link3')">Pranks'n'Stuff</button>
+	  <button class="tablinks" onclick="openCity(event, 'link3')">Tiptop News</button>
+	  <button class="tablinks" onclick="openCity(event, 'link3')">Appreciation Board</button>
+	</div>	
+	
+	<div class="main">
+	
 	<marquee behavior="scroll" direction="right" scrollamount="10" style="color:red;">
 		GET RICH FAST GET RICH FAST GET RICH FAST GET RICH FAST GET RICH FAST GET RICH FAST GET RICH FAST GET RICH FAST 
 	</marquee>
 	<br>
-	<img	 src="https://web.archive.org/web/20090829045745im_/http://www.geocities.com/prisonmurder/bloodbar.gif">
+	<img src="https://web.archive.org/web/20090829045745im_/http://www.geocities.com/prisonmurder/bloodbar.gif">
 	<h1>GETRICHONLINEFORFREE</h1>
 	<img src="https://web.archive.org/web/20090829143548/http://geocities.com/Area51/Vault/9112/INVASIONBAR.GIF">
 
@@ -35,22 +71,22 @@
 
 <body style="background-color:black;background-image:url('https://web.archive.org/web/20090806030129im_/http://www.geocities.com/arielpurkey/starstwinkle.gif"');">
 	
-	<div class="tab">
-	  <button class="tablinks" onclick="openCity(event, 'link1')" id="defaultOpen">Home</button>
-	  <button class="tablinks" onclick="openCity(event, 'link2')">MAKE CASH</button>
-	  <button class="tablinks" onclick="openCity(event, 'link3')">Pranks</button>
-	</div>
-	
 	<div id="link1" class="tabcontent">
 	  <h1 style="color:black;background-color:red;" text-shadow="red">Home</h1>
 	  <t>Welcome! If you're here to read and learn than you are a smart person! Here we consider rules and norms with our own logic and life choises. After all, who else are they made for?</p>
 	  <p>And of course who doesn't want to get rich quick? Anyways, this site will update regularly, so keep up to date!</p>
+	  <img src="https://web.archive.org/web/20090831051620/http://geocities.com/d_blakeley/Cash.gif">
+	  
 	</div>
 
 	<div id="link2" class="tabcontent">
 	  <h1 style="color:black;background-color:red;" text-shadow="red">Make Cash FAST!!!!11!1!1</h1>
 	  <p>Ever short on cash? Me too buddy, but fear not! I have the solution</p>	
-	  <p> 1) um... </P>
+	  <p> 1) Find a picture of a dollar bill on the internet
+	  <br> 2) Print it at full size
+	  <br> 3) Go to a store and try to use it to pay for something
+	  <br> 4) Repeat</p>
+	  <p>Of course some need cash faster than that. However you may just have to stay tuned for updates for more ideas...</p>
 	</div>
 
 	<div id="link3" class="tabcontent">
