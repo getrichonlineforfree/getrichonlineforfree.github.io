@@ -11,18 +11,18 @@
 			width: 120px;
 			position: fixed;
 			z-index: 1;
-			top: 5px;
-			left: 5px;
+			top: 0px;
+			left: 0px;
 			background: red;
 			overflow-x: hidden;
 			padding: 8px 10px;
 		  }
 			
 		  .sidenav button {
-			font-family: 'Georgia', serif;
-			background-color: white;
-			float: left;
-			outline: none;
+			font-family: 'Georgia', serif,;
+			color:white;
+			background-color: black;
+			outline: white;
 			cursor: pointer;
 			padding: 4px 4px;
 			font-size: 15px;	
@@ -55,15 +55,15 @@
 		  }	
 		  
 		  #bloodbar {
-			position: absolute;
+			position: inline;
 			height: 25px;
-			width: 90%;
+			width: 100%;
 			background: url("bloodbar.gif") center repeat-x;
 			background-size: auto 100%;
 		  }		
 		  
 		  #dollarsignbar {
-			position: absolute;
+			position: inline;
 			height: 50px;
 			width: 90%;
 			background: url("dollarsignbar.gif") center repeat-x;
@@ -73,24 +73,27 @@
 		  body {
 			color: white;
 			font-family: 'Georgia', serif;
-			background-image: url("starstwinkle.gif"");
-			background-repeat: repeat-y;
+			background-image: url(starstwinkle.gif);
+			background-repeat: repeat;
+			background-color: black;
 		  }
 		  
-		  h1 {
-			line-height: 0.1px;
-		  }
 		</style>
 	</head>
 	
-	<body style="background-color:black;background-image:url('https://web.archive.org/web/20090806030129im_/http://www.geocities.com/arielpurkey/starstwinkle.gif');">
+	<body>
 		<div class="sidenav">
-		  <button class="tablinks" onclick="opentab(event, 'home')" id="defaultOpen"><u><b>Home</b></u></button>
+		  <button style="font-weight:bold;color:goldenrod;text-decoration:underline;" class="tablinks" onclick="opentab(event, 'home')" id="defaultOpen">Home</button>
+		  <br>
 		  <button class="tablinks" onclick="opentab(event, 'news')">News clippings</button>
-		  <button style="background:url(https://web.archive.org/web/20090831130739/http://geocities.com/titus_thai/free.gif);font-weight:bold;background-position:centred;" class="tablinks" onclick="opentab(event, 'cashfast')">Free Cash</button>
+		  <br>
+		  <button style="font-weight:bold;" class="tablinks" onclick="opentab(event, 'cashfast')">Free Cash</button>
+		  <br>
 		  <button class="tablinks" onclick="opentab(event, 'tips')">Tips n Stuff</button>
+		  <br>
 		  <button class="tablinks" onclick="opentab(event, 'wall')">Wall of Fame</button>
-		  <button class="tablinks" onclick="opentab(event, 'band')">SL</button>
+		  <br>
+		  <button class="tablinks" onclick="opentab(event, 'band')"><img src="sl.png" width="100%"></button>
 		</div>	
 		
 		<div class="header">
@@ -99,7 +102,6 @@
 		  </marquee>
 		  <br>
 		  <div id="bloodbar"></div>
-		  <br>
 		  <img src="title.gif">
 		  <a href="new.html" style,>
 			<img src="https://web.archive.org/web/20090831051620/http://geocities.com/d_blakeley/Cash.gif" width="500" title="CLICK NOW">	
